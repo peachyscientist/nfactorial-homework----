@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+              <img src="logo.png">
+            </a>
+          </div>
+
+        <nav class="navigation">
+            
+            <a href="map.html" class="active">Карта растений<span></span></a>
+            <a href="tour.html">Экскурсии<span></span></a>
+            <a href="institut.html">Об институте<span></span></a>
+            <a href="laboratory.html">Лаборатории<span></span></a>
+            <a href="contact.html">Контакты<span></span></a>
+        </nav>
+    </header>
+    <section class="info">
+    </section>
+
+<section class="sec-plant">
+        <h2>Карта растений ботанического сада</h2>
+        <p> Добро пожаловать в главный ботанический сад, оазис природного великолепия и вдохновения! Здесь вы окунетесь в мир невероятной красоты и разнообразия растительного царства. Наш сад простирается на пространстве, на котором вы сможете восхищаться живописными пейзажами, исследовать удивительные экосистемы и наслаждаться уникальными растениями со всех уголков мира
+        </p>
+        <br>
+        <p>
+            Карта растений - это особое место в нашем саду, где вы сможете погрузиться в волшебную коллекцию редких и экзотических растений. Шагнув внутрь, вы найдете себя в удивительном симбиозе природы и искусства<br><br>
+        </p>
+</section>
+
+
+<style>
+    /* Стилизация карты */
+    #park-map {
+    position: relative;
+
+      width: 700px;
+      height: 700px;
+      background-image: url('map-canva.png'); 
+      background-position: center;
+      background-size: cover;
+      margin-left: 100px;
+    }
+
+    /* Стилизация меток */
+    .marker {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: rgb(13, 37, 16);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+<body>
+    <section class="services">
+        <div class="section__container services__container">
+          <div class="services__content">
+            <h2 class="section__title">Как использовать карту?</h2>
+            <p class="section__subtitle">
+                Интерактивная карта растений была создана для облегчения и улучшения опыта посетителей ботанического сада. Она предоставляет детальную информацию о различных видов растений, их расположении и особенностях, позволяя гостям легко ориентироваться и находить интересующие их растения. Карта также может быть использована для образовательных целей, предоставляя посетителям уникальную возможность изучать и погружаться в мир растительного царства.
+            </p>
+    
+          </div>
+          <div class="services__grid">
+            <div class="services__card">
+              <div class="icon">
+                <img src="lupa.png" alt="service" />
+              </div>
+              <div class="services__card__content">
+                <h4>Найдите растение</h4>
+                <p>
+                    На карте найдите интересующее вас растение.
+                </p>
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="icon">
+                <img src="touch.png" alt="service" />
+              </div>
+              <div class="services__card__content">
+                <h4>Найдите метку</h4>
+                <p>
+                    После того как вы нашли нужное растение нажмите на метку рядом с ним.
+                </p>
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="icon">
+                <img src="link.png" alt="service" />
+              </div>
+              <div class="services__card__content">
+                <h4>Нажмите на метку</h4>
+                <p>
+                    После того как вы нажали на метку вас перенаправит на страницу из Wikipedia с информацией о растении.
+                </p>
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="icon">
+                <img src="read.png" alt="service" />
+              </div>
+              <div class="services__card__content">
+                <h4>Изучите информацию</h4>
+                <p>
+                    Подробнее изучите информацию о растении и поделитесь с друзьями.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  <div id="park-map">
+    <!-- Метки -->
+    <a href="https://ru.wikipedia.org/wiki/Лиственница_Гмелина" target="_blank">
+        <div class="list marker" style="left: 150px; top: 150px;"></div>
+      </a>
+      
+      <a href="https://ru.wikipedia.org/wiki/Дуб_каменный" target="_blank">
+        <div class="dub marker" style="left: 105px; top: 245px;"></div>
+      </a>
+  
+      <a href="https://ru.wikipedia.org/wiki/Кувшинка_белая" target="_blank">
+        <div class="lily marker" style="left: 200px; top: 225px;"></div>
+      </a>
+  
+      <a href="https://ru.wikipedia.org/wiki/Шиповник_многоцветковый" target="_blank">
+        <div class="rose-2 marker" style="left: 260px; top: 295px;"></div>
+      </a>
+
+      <a href="https://ru.wikipedia.org/wiki/Нарцисс_жонкилля" target="_blank">
+        <div class="narc marker" style="left: 150px; top: 370px;"></div>
+      </a>
+      
+      <a href="https://ru.wikipedia.org/wiki/Роза_дамасская" target="_blank">
+        <div class="rose-1 marker" style="left: 240px; top: 430px;"></div>
+      </a>
+  
+      <a href="https://ru.wikipedia.org/wiki/Можжевельник_виргинский" target="_blank">
+        <div class="mozh marker" style="left: 150px; top: 485px;"></div>
+      </a>
+  
+      <a href="https://ru.wikipedia.org/wiki/Пион_обратнояйцевидный" target="_blank">
+        <div class="pion marker" style="left: 320px; top: 530px;"></div>
+      </a>
+
+      <a href="https://ru.wikipedia.org/wiki/Ель_голубая" target="_blank">
+        <div class="el marker" style="left: 500px; top: 590px;"></div>
+      </a>
+  
+      <a href="https://en.wikipedia.org/wiki/Forsythia_×_intermedia" target="_blank">
+        <div class="forz marker" style="left: 420px; top: 430px;"></div>
+      </a>
+
+      <a href="https://ru.wikipedia.org/wiki/Магнолия_звёздчатая" target="_blank">
+        <div class="mag marker" style="left: 570px; top: 360px;"></div>
+      </a>
+      
+      <a href="https://ru.wikipedia.org/wiki/Гортензия_крупнолистная" target="_blank">
+        <div class="gor-1 marker" style="left: 490px; top: 320px;"></div>
+      </a>
+  
+      <a href="https://ru.wikipedia.org/wiki/Гортензия_метельчатая" target="_blank">
+        <div class="gor-2 marker" style="left: 550px; top: 280px;"></div>
+      </a>
+  
+      <a href="https://ru.wikipedia.org/wiki/Клён_остролистный" target="_blank">
+        <div class="klen marker" style="left: 430px; top: 250px;"></div>
+      </a>
+
+  </div>
+
+
+  
+</body>
+</html>
